@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap');
-body
+*
 {
-    font-style:'Oswald', sans-serif;
+    font-family:"Oswald", sans-serif;
 }
 *, ::before, ::after {
     box-sizing: border-box;
@@ -37,6 +37,39 @@ body {
 .nav-gauche a
 {
     text-decoration:none;
+}
+.blocs-menu a::before
+{
+    content:"";
+    width:0;
+    height:2px;
+    background-color:#074680;
+    display:block;
+    transition: all 0.2s ease-out;
+    margin : 10px auto;
+    
+}
+.blocs-menu a:hover::before
+{
+    
+    width:100%;
+ 
+    
+}
+.blocs-menu a::after
+{
+    content:"";
+    width:0;
+    height:2px;
+    background-color:#074680;
+    display:block;
+    transition: all 0.2s ease-out;
+    margin : 10px auto;
+    
+}
+.blocs-menu a:hover::after
+{
+    width:100%; 
 }
 .nav-gauche img
 {
@@ -136,13 +169,14 @@ h1 {
 .logo-btn-rond-acc {
     width: 35px;
 }
-/*.presentation {
-    width: ;
+.presentation {
+    width:70%;
     position: ;
     overflow: ;
     border-top: ;
     border-bottom: ;
     color: ;
+    margin-left:300px;
 }
 .fond-forme {
     background: ;
@@ -155,16 +189,16 @@ h1 {
 }
 
 .titre-pres {
-    font-size: ;
-    text-align: ;
-    margin: ;
-    padding-left: ;
+    font-size:30px;
+    text-align:center;
+    margin:10px;
+    padding-left:10px;
 }
 
 .container-presentation {
     display: flex;
-    width: ;
-    justify-content: ;
+    width:1300px;
+    justify-content: space-between;
     align-items: ;
     margin: ;
     flex-shrink: 0;
@@ -207,4 +241,4 @@ h1 {
 .txt-liste {
     font-size: ;
     display: ;
-}*/
+}
