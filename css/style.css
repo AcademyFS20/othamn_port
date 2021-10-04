@@ -29,6 +29,18 @@ body {
     border-right: 1px dashed gray;
     z-index: 5;
     transition: all 0.2s ease-in-out;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-around;
+}
+.nav-gauche a
+{
+    text-decoration:none;
+}
+.nav-gauche img
+{
+    border-radius:50%;
 }
 
 
