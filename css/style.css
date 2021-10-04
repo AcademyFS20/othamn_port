@@ -22,11 +22,11 @@ body {
     width: 300px;
     height: 100vh;
     min-height: 800px;
-    background: #333;
+    background: #f1f1f1;
     position: fixed;
     top: 0;
-    left: -300px;
-    border-right: 1px dashed #f1f1f1;
+    left: 0;
+    border-right: 1px dashed gray;
     z-index: 5;
     transition: all 0.2s ease-in-out;
 }
@@ -49,17 +49,19 @@ h1 {
     font-family: 'Abril Fatface', sans-serif;
     margin: 0 60px;
     padding-top: 210px;
+    color:#074680;
 }
 .txt-animation {
     font-size: 30px;
     margin: 10px 0 10px 60px;
+    color:#63b8ff;
 }
 .btn-acc {
     display: inline-flex;
     width: 200px;
     height: 50px;
     text-decoration: none;
-    background: #000;
+    background: #b9d3ea;
     justify-content: center;
     align-items: center;
     color: #f1f1f1;
@@ -72,8 +74,8 @@ h1 {
 }
 .btn-acc2 {
     background: transparent;
-    border: 2px solid black;
-    color: black;
+    border: 2px solid #b9d3ea;
+    color: #63b8ff;
     font-weight: 700;
 }
 .medias {
@@ -84,7 +86,7 @@ h1 {
 .media {
     width: 60px;
     height: 60px;
-    background: #333;
+    background: #b9d3ea;
     border-radius: 50%;
     margin-right: 10px;
     display: flex;
@@ -111,7 +113,7 @@ h1 {
     align-items: center;
     cursor: pointer;
     box-shadow: 0 0 0 0 #333;
-    background: #333;
+    background: #b9d3ea;
     animation: pulse 1.3s infinite;
 }
 @keyframes pulse {
