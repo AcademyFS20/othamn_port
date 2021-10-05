@@ -14,7 +14,8 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     background: #f1f1f1;
-    overflow-x: hidden !important;
+    overflow-x: hidden;
+    width:100%;
 }
 :root         /*Charte graphique*/
  {
@@ -205,7 +206,7 @@ h1 {
 .container-presentation {
     display: flex;
     /*width:70%;*/
-    justify-content: space-between;
+    justify-content: center;
     align-items:center;
     margin:10px auto;
     flex-shrink: 0;
@@ -215,7 +216,7 @@ h1 {
     width: 600px;
     flex-shrink: 0;
     margin-bottom: 50px;
-    padding-left: 120px;
+    padding-left: 0;
     padding-top: 20px;
 }
 .pres-gauche h3 {
@@ -265,4 +266,92 @@ h1 {
 {
     display:flex;
     position:relative;
+}
+
+/***************  Burger ********************/
+.burger
+{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:var(--block-color);
+    z-index:10;
+    position:absolute;
+    left:0;
+    top:0;
+}
+.line
+{
+    width:70%;
+    height:3px;
+    background-color:var(--primary-color);
+    position:absolute;
+    top:46%;
+    left:13%;
+}
+.line-container::after
+{
+    content:'';
+    width:100%;
+    margin:0 auto;
+    position:relative;
+    bottom:13px;
+    height:3px;
+    background-color:var(--primary-color);
+    display:block;
+}
+.line-container::before
+{
+    content:'';
+    width:100%;
+    /*margin:10px auto 10px auto !important;*/
+    position:relative;
+    top:10px;
+    margin:0 auto;
+    height:3px;
+    background-color:var(--primary-color);
+    display:block;
+}
+      /******* class of animation navbar ************/
+
+.nav-in
+{
+    left:0;
+}
+.nav-out
+{
+    left:-300px;
+}
+
+      /************** responsive ********************/
+
+@media screen and (min-width:998px)
+{
+    .burger
+    {
+        display:none;
+    }
+    .nav-gauche-in
+    {
+        left:0px;
+    }
+}
+@media screen and (max-width:998px)
+{
+    body{
+        width: 100%;
+    }
+    .nav-gauche
+    {
+        position:fixed;
+    }
+    .nav-gauche-out
+    {
+       left:-300px;
+    }
+
+    .accueil
+    {
+        width:100%;
+    }
 }
