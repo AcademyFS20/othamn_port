@@ -25,7 +25,7 @@ Typewriter
 let burger=document.querySelector(".burger");
 let nav=document.querySelector(".nav-gauche");
 burger.addEventListener("click",function(){
-    nav.classList.toggle("nav-gauche-in");
+    //nav.classList.toggle("nav-gauche-in");
     nav.classList.toggle("nav-gauche-out");
 });
 for(i=0;i<5;i++)

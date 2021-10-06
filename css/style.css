@@ -27,7 +27,7 @@ body {
 /*  <!-- Navigation verticale / Left Fixed Navbar --> */
 .nav-gauche {
     width: 300px;
-    height: 100vh;
+    height: 100%;
     min-height: 800px;
     background: #f1f1f1;
     position: fixed;
@@ -177,63 +177,85 @@ h1 {
 .logo-btn-rond-acc {
     width: 35px;
 }
+
+        /**************** presentation **************/
+
 .presentation {
-    width:70%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    width:100%;
     position:relative;
     overflow: ;
     border-top: ;
     border-bottom: ;
     color: ;
-    margin-left:300px;
+    background-image: linear-gradient(to left bottom, #b9d3ea, #a8cfee, #95ccf3, #7fc8f6, #63c5fa);
+    /*margin-left:300px;*/
 }
-.fond-forme {
-    /*background: #b9d3ea;
-    background-image: ;
-    width:100%;
-    height: 100%;
-    position:relative;
-    transform: rotate(-45deg) translateX(100px) translateY(-15px);
+.fond-form{
+
+    /*background-image: linear-gradient(to right, #66FCF1, #45A29E);
+    width: 100%;
+    height: 155%;
+     position: absolute;
+     transform: rotate(-55deg) translateX(-174px) translateY(-38px);
     z-index: -1;*/
+    
+   }
+.container-presentation {
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+    align-items:center;
+    margin:10px 0 10px 0;
+    flex-shrink: 0;
+    /*padding-left:300px;*/
 }
 
 .titre-pres {
+    width: calc(100% - 300px);
     font-size:30px;
     text-align:center;
-    margin:10px;
-    padding-left:10px;
+    margin:10px 10px 10px 300px;
+    padding-left:80px;
+    align-self:center;
+    /*margin-left:300px;*/
+    color:var(--primary-color);
 }
 
-.container-presentation {
+/*.container-presentation {
     display: flex;
     /*width:70%;*/
-    justify-content: center;
+/*    justify-content: center;
     align-items:center;
     margin:10px auto;
     flex-shrink: 0;
     padding-left:20px;
-}
+}*/
 .pres-gauche {
-    width: 600px;
+    width: 38%;
     flex-shrink: 0;
     margin-bottom: 50px;
     padding-left: 0;
     padding-top: 20px;
 }
 .pres-gauche h3 {
-    text-align:center;
+    text-align:justify;
     font-size:24px;
     letter-spacing:0.035px;
 }
 .pres-gauche hr {
     width:90%;
-    margin:20px auto 100px auto;
+    margin:20px auto 20px auto;
 }
 .pres-gauche p {
-    text-align:center;
+    text-align:justify;
 }
 
 .pres-droite {
-    width: 600px;
+    width: 38%;
     flex-shrink: 0;
     display: flex;
     justify-content: flex-start;
@@ -335,9 +357,25 @@ h1 {
     {
         left:0px;
     }
+    .container-presentation {
+        padding-left:300px;
+    }
+    /*.container-presentation {
+        display: flex;
+        width:70%;
+        justify-content: center;
+        align-items:center;
+        margin:10px 0 10px 0;
+        flex-shrink: 0;
+        padding-left:300px;
+    }*/
 }
 @media screen and (max-width:998px)
 {
+    .titre-pres {
+        margin-left:0; 
+    }
+    
     body{
         width: 100%;
     }
@@ -354,4 +392,15 @@ h1 {
     {
         width:100%;
     }
+    .container-presentation
+    {
+        margin-left:0px;
+    }
+}
+
+           /************ Portfolio **********/
+
+.portfolio
+{
+    z-index:5;
 }
