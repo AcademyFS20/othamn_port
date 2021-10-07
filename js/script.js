@@ -1,5 +1,4 @@
 var txt = document.querySelector('.txt-animation');
-console.log(txt);
 var Typewriter = new Typewriter(txt, {
   loop: false,
   delay: 45,
@@ -32,7 +31,6 @@ for(i=0;i<5;i++)
 {
 let lien=[];
 lien[i]=document.querySelectorAll(".nav-menu-item a")[i];
-//console.log(lien);
 lien[i].addEventListener("click",function(){
 nav.classList.add("nav-gauche-out");
 });
