@@ -626,3 +626,44 @@ h1 {
 
           /*********** Experiences *************/
 
+.titre-travail-exp
+{
+    /* margin-left:300px; */
+    text-align:center;
+    margin-top:10px;
+    margin-bottom:30px;
+}
+.barre-verticale
+{
+    width:100px;
+    height:auto;
+}
+.bloc
+{
+    border:1px solid black;
+}
+.travail-exp
+{
+    margin-left:300px;
+}
+/* .barre-verticale, .flex-cont-bloc-exp
+{
+    display:inline-block;
+} */
+.cont-exp-travail
+{
+    display:flex;
+    align-items:space-between;
+}
+.bloc2, .bloc3, .bloc4
+{
+    height:119.28px;
+    padding:20px 0 50px 20px;
+}
+
+              /*********** Contact ************/
+
+#contact
+{
+    margin-left:300px;
+}

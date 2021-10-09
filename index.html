@@ -7,6 +7,91 @@
     <script src="https://kit.fontawesome.com/43565e0527.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Portfolio</title>
+    <style>
+    .titre-travail-exp
+    {
+        /* margin-left:300px; */
+        text-align:center;
+        margin-top:10px;
+        margin-bottom:30px;
+        color:#074680;
+    }
+    .barre-verticale
+    {
+        width:100px;
+        height:auto;
+    }
+    .bloc
+    {
+        border:1px solid black;
+        overflow:scroll;
+    }
+    .barre-verticale, .flex-cont-bloc-exp
+    {
+        display:inline-block;
+    }
+    .cont-exp-travail
+    {
+        display:flex;
+        align-items:space-between;
+    }
+    .bloc2, .bloc3, .bloc4
+    {
+        height:119.28px;
+        padding:20px 0 50px 20px;
+    }
+    .bloc1
+    {
+        height:74px;
+    }
+    @media screen and (min-width:998px)
+    {
+        .travail-exp
+        {
+            margin-left:300px;
+        }
+        #contact
+        {
+            margin-left:300px;
+        }
+    }
+    @media screen and (max-width:998px)
+    {
+        .travail-exp
+        {
+            margin-left:0px;
+        }
+        #contact
+        {
+            margin-left:0;
+        }
+    }
+         /************* Section contact ************/
+    /* #contact
+    {
+        margin-left:300px;
+    } */
+    #contact h2
+    {
+        text-align:center;
+        margin-bottom:30px;
+        color:#074680;
+    }
+    input[type="text"], textarea
+    {
+        display:block;
+        width:100%;
+    }
+    .form-groupe
+    {
+        margin-bottom:20px;
+    }
+    .container-form
+    {
+        padding-left:25%;
+        padding-right:25%;
+    }
+    </style>
 </head>
 <body>
     <div class="burger">
@@ -307,20 +392,20 @@
     <div class="cont-exp-travail">
         <div class="barre-verticale">
             <div class="boule-ico">
-                <img src="ressources/google.svg" alt="icone gauche">
+                <img src="images/google.jpg" alt="icone gauche" style="width:100px; height:74px;">
             </div>
             <div class="boule-ico">
-                <img src="ressources/instagram.svg" alt="icone gauche">
+                <img src="images/instagram.svg" alt="icone gauche">
             </div>
             <div class="boule-ico">
-                <img src="ressources/amazon.svg" alt="icone gauche">
+                <img src="images/amazon.svg" alt="icone gauche">
             </div>
             <div class="boule-ico">
-                <img src="ressources/apple.svg" alt="icone gauche">
+                <img src="images/apple.svg" alt="icone gauche">
             </div>
-            <div class="boule-ico">
-                <img src="ressources/plane.svg" class="avion" alt="icone gauche">
-            </div>
+            <!-- <div class="boule-ico">
+                <img src="images/plane.svg" class="avion" alt="icone gauche">
+            </div> -->
         </div>
         <div class="flex-cont-bloc-exp">
             <div class="bloc bloc1">
@@ -357,14 +442,14 @@
         <form class="form-bloc">
             <div class="form-groupe">
                 <label for="prenom">First Name</label>
-                <input type="text" required maxlength="16" id="prenom">
+                <input type="text" required maxlength="16" id="prenom" size="100%">
             </div>
             <div class="form-groupe">
                 <label for="nom">Last Name</label>
-                <input type="text" required maxlength="16" id="nom">
+                <input type="text" required maxlength="16" id="nom" size="100%">
             </div>
             <div class="form-groupe">
-                <textarea id="txt" placeholder="Votre message" required></textarea>
+                <textarea id="txt" placeholder="Votre message" cols="100%" rows="5" required></textarea>
             </div>
             <div class="form-groupe">
                 <input type="submit" value="ENVOYER" class="button-sub">
